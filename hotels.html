@@ -5,10 +5,10 @@
     <title>Добро пожаловать в Седону!</title>
   </head>
   <body>
-	  	<header class="main-header">
-	  		<div class="container">
-	  			<a href="/index.html" class="navigation-logo" alt="Седона"><img src="#"></a>
-	  			<nav class="main-navigation">
+....<header class="main-header">
+......<div class="container">
+  ......<a href="/index.html" class="navigation-logo" alt="Седона"><img src="#"></a>
+........<nav class="main-navigation">
 	  				<li><a href="#">Информация</a></li>
 	  				<li><a href="#">Фото и видео</a></li>
 	  				<li><a href="#">Карта штата</a></li>
@@ -20,39 +20,39 @@
 	  		<fieldset>
 	  			<legend>Инфраструктура:</legend>
 	  				<label>
-						<input type="checkbox" value="pool" checked> Бассейн
+						<input type="checkbox" name="pool" checked> Бассейн
 					</label>
 					<label>
-						<input type="checkbox"> Парковка
+						<input type="checkbox" name="parking"> Парковка
 					</label>
 					<label>
-						<input type="checkbox"> Wi-Fi
+						<input type="checkbox" name="wi-fi"> Wi-Fi
 					</label>
 	  		</fieldset>
 	  		<fieldset>
 	  			<legend>Тип жилья:</legend>
 	  				<label>
-						<input type="checkbox" checked>Гостиница
+						<input type="checkbox" name="hotel" checked>Гостиница
 					</label>
 					<label>
-						<input type="checkbox" checked>Отель
+						<input type="checkbox" name="motel" checked>Мотель
 					</label>
 					<label>
-						<input type="checkbox" checked>Аппартаменты
+						<input type="checkbox" name="appartments" checked>Аппартаменты
 					</label>
 	  		</fieldset>
 	  		<fieldset class="rangeslider">
 	  			<legend>Стоимость в сутки (Р):</legend>
 	  			<div class="price-wrapper">
-	  				<input type="text" value="от 0" id="price-min">
-	  				<input type="text" value="до 3000" id="price-max">
+	  				<input type="text" name="minimum-price" value="от 0" id="price-min">
+	  				<input type="text" name="maximum-price"value="до 3000" id="price-max">
 	  			</div>
 	  			<div class="slider">
 	  				<!-- <span class="slider-min-range"></span>
 	  				<span class="slider-max-range" selected></span> -->
 	  			</div>
 	  		</fieldset>
-	  		<input type="submit" value="Показать" class="show-results">
+	  		<input type="submit" value="Показать" class="show-results" name="results">
 	  	</form>
 	  	<div class="main-container">
 		  	<div class="sort-header">
@@ -60,7 +60,7 @@
 		  		<div class="sort-by-left">
 		  			Сортировка:
 		  			<ul class="sort-nav">
-		  				<li class="sort-item"><a href="#" selected>По цене</a></li>
+		  				<li class="sort-item"><a href="#" class="selected">По цене</a></li>
 		  				<li class="sort-item"><a href="#">По типу</a></li>
 		  				<li class="sort-item"><a href="#">По рейтингу</a></li>
 		  			</ul>
