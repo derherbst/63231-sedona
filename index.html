@@ -10,13 +10,15 @@
     <div class="wrapper">
       <header class="main-header">
         <div class="container">
-          <a class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
-          <nav class="main-navigation">
-            <ul>
-              <li><a href="#">Информация</a></li>
-              <li><a href="#">Фото и видео</a></li>
-              <li><a href="#">Карта штата</a></li>
-              <li><a href="hotels.html">Гостиницы</a></li>
+          <nav class="main-navigation clearfix">
+            <ul class="main-navigation-left">
+              <li class="main-navigation-item"><a href="#">Информация</a></li>
+              <li class="main-navigation-item"><a href="#">Фото и видео</a></li>
+            </ul>
+            <a class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
+            <ul class="main-navigation-right">
+              <li class="main-navigation-item"><a href="#">Карта штата</a></li>
+              <li class="main-navigation-item"><a href="hotels.html">Гостиницы</a></li>
             </ul>
           </nav>
         </div>
@@ -26,15 +28,15 @@
           <img src="img/welcome.png" width="458" height="352" alt="Добро пожаловать в Седону!">
         </div>
         <article class="container-intro">
-          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </article>
-        <div class="reasons-block">
+        <div class="reasons-block clearfix">
           <div class="reason blue">
             <h2 class="reason-name">Настоящий городок</h2>
             <b>– №1 –</b>
             <p>Седона – не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
+          </div>
           <figure class="reason-image">
             <img src="#" alt="Фотография Седоны">
           </figure>
@@ -56,7 +58,7 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="reasons-block">
+        <div class="reasons-block clearfix">
           <figure class="reason-image">
             <img src="#" alt="Мост дъявола">
           </figure>
@@ -66,7 +68,7 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="reasons-block">
+        <div class="reasons-block clearfix">
           <div class="reason">
             <h2 class="reason-name">Небольшая площадь</h2>
             <b>– №3 –</b>
@@ -84,7 +86,7 @@
           </div>
         </div>
         <div class="container-booking">
-          <div class="container-booking intro">
+          <div class="container-booking-intro">
             <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
@@ -128,7 +130,7 @@
         </div>
       </main>
       <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
           <section class="footer-hashtag">
             #visitsedona
           </section>

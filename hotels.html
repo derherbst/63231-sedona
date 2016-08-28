@@ -8,16 +8,20 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a href="index.html" class="logo" alt="Седона"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
-        <nav class="main-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="sedona-hotels.html" class="selected">Гостиницы</a></li>
-        </nav>
-      </div>
-    </header>
+        <div class="container">
+          <nav class="main-navigation clearfix">
+            <ul class="main-navigation-left">
+              <li class="main-navigation-item"><a href="#">Информация</a></li>
+              <li class="main-navigation-item"><a href="#">Фото и видео</a></li>
+            </ul>
+            <a class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
+            <ul class="main-navigation-right">
+              <li class="main-navigation-item"><a href="#">Карта штата</a></li>
+              <li class="main-navigation-item"><a href="hotels.html" class="selected">Гостиницы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <form class="search-form">
       <fieldset>
         <legend>Инфраструктура:</legend>
@@ -50,8 +54,6 @@
           <input type="text" name="maximum-price"value="до 3000" id="price-max">
         </div>
         <div class="slider">
-          <!-- <span class="slider-min-range"></span>
-          <span class="slider-max-range" selected></span> -->
         </div>
       </fieldset>
       <input type="submit" value="Показать" class="show-results" name="results">
@@ -150,7 +152,7 @@
       </div>
     </div>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hashtag">
           #visitsedona
         </section>

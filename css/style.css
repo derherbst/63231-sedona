@@ -21,3 +21,182 @@ h2 {
   font-weight: bold;
   font-family: 'PTSans', 'Arial', sans-serif;
 }
+
+body {
+  min-width: 768px;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  min-width: 768px;
+  max-width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.main-header {
+  height: 56px;
+  margin-bottom: 76px;
+  background-color: red;
+  outline: 3px solid #ec2fea;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  outline: 3px solid #ee3fea;
+}
+
+.main-navigation {
+  width: 100%;
+  color: #435378;
+  outline: 3px solid black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-navigation-left {
+  float: left;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-navigation-right {
+  float: right;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-navigation-item {
+  width: 50%;
+  line-height: 56px;
+  float: left;
+  background: yellow;
+  outline: 3px solid #976af3;
+}
+
+.logo {
+  float: left;
+  text-align: center;
+  width: 20%;
+  height: 70px;
+  outline: 3px solid #00ff0c;
+}
+
+/*как расположить фон?*/
+
+.container-welcome {
+  outline: 3px solid #00ff0c;
+  width: 458px;
+  height: 352px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+  margin-bottom: 62px;
+}
+
+/*как добавить белую маску?*/
+
+
+.container-intro {
+  outline: 3px solid #00ff0c;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.reasons-block {
+  width: 100%;
+  outline: 3px solid #945f53;
+  margin-bottom: 62px;
+}
+
+/*не встают вплотную*/
+
+.blue {
+  float: left;
+  width: 33%;
+  outline: 3px solid #56d353;
+  padding: 0;
+  margin-right: 0px;
+}
+
+.reason-image {
+  float: right;
+  width: 66%;
+  outline: 3px solid #94d353;
+  margin: 0;
+  padding: 0;
+}
+
+/*или все же обойтись внутреннипи отступами?*/
+
+.features-block {
+  width: 100%;
+  margin-bottom: 80px;
+  background-color: #900045;
+  font-size: 0px;
+}
+
+/*как поступить с мелким отступом у третьего блока справа?*/
+
+.feature {
+  /*float: left;*/
+  width: 33%;
+  display: inline-block;
+  outline: 3px solid #990753;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.reason {
+  float: left;
+  width: 33%;
+}
+
+.container-booking {
+  width: 100%;
+  text-align: center;
+}
+
+.container-booking-intro {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 3px solid #67d353
+}
+
+.btn-search {
+  display: block;
+}
+
+/*спросить про карту под футером*/
+.main-footer {
+
+}
+
+.footer-hashtag {
+  width: 33%;
+  float: left;
+}
+
+.footer-social {
+  width: 33%;
+  float: left;
+}
+
+.footer-copyright {
+  width: 33%;
+  float: right;
+}
