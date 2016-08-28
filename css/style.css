@@ -3,7 +3,7 @@ body {
   line-height: 21px;
   color: #333333;
   font-weight: normal;
-  font-family: 'PTSans', 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
   line-height: 26px;
   color: #333333;
   font-weight: bold;
-  font-family: 'PTSans', 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 h2 {
@@ -19,11 +19,10 @@ h2 {
   line-height: 26px;
   color: #333333;
   font-weight: bold;
-  font-family: 'PTSans', 'Arial', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 body {
-  min-width: 768px;
   background-color: black;
   padding: 0;
   margin: 0;
@@ -38,7 +37,7 @@ body {
 }
 
 .main-header {
-  height: 56px;
+  min-height: 56px;
   margin-bottom: 76px;
   background-color: red;
   outline: 3px solid #ec2fea;
@@ -62,35 +61,30 @@ body {
   clear: both;
 }
 
-.main-navigation-left {
-  float: left;
-  width: 40%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.main-navigation-right {
-  float: right;
-  width: 40%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.main-navigation-list {
+  padding-left: 0;
+  font-size: 0;
 }
 
 .main-navigation-item {
-  width: 50%;
-  line-height: 56px;
-  float: left;
+  display: inline-block;
+  font-size: 16px;
+  width: 20%;
+  text-align: center;
+  line-height: 26px;
   background: yellow;
   outline: 3px solid #976af3;
 }
 
+.main-navigation-item:nth-child(2) {
+  margin-right: 20%;
+}
+
 .logo {
-  float: left;
-  text-align: center;
-  width: 20%;
-  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
   outline: 3px solid #00ff0c;
 }
 
@@ -98,10 +92,8 @@ body {
 
 .container-welcome {
   outline: 3px solid #00ff0c;
-  width: 458px;
-  height: 352px;
-  margin-left: auto;
-  margin-right: auto;
+/*высота и ширина падингами и маргинами*/
+  margin: 0px auto;
   padding-bottom: 80px;
   margin-bottom: 62px;
 }
@@ -117,6 +109,14 @@ body {
   margin-bottom: 60px;
 }
 
+.container-intro h1 {
+  margin-top: 0px;
+}
+
+.container-intro p {
+  margin-top: 0px;
+}
+
 .reasons-block {
   width: 100%;
   outline: 3px solid #945f53;
@@ -125,18 +125,19 @@ body {
 
 /*не встают вплотную*/
 
-.blue {
+.reason-blue {
   float: left;
-  width: 33%;
+  width: 33,33333%;
   outline: 3px solid #56d353;
-  padding: 0;
-  margin-right: 0px;
+  background-color: black;
+  padding: 0px;
 }
 
 .reason-image {
   float: right;
-  width: 66%;
+  width: 66,66666%;
   outline: 3px solid #94d353;
+  background-color: yellow;
   margin: 0;
   padding: 0;
 }
@@ -147,23 +148,24 @@ body {
   width: 100%;
   margin-bottom: 80px;
   background-color: #900045;
-  font-size: 0px;
+  /*font-size: 0px;*/
 }
 
 /*как поступить с мелким отступом у третьего блока справа?*/
 
 .feature {
-  /*float: left;*/
-  width: 33%;
-  display: inline-block;
+  float: left;
+  width: 33,333333333%;
+/*  display: inline-block;*/
   outline: 3px solid #990753;
-  vertical-align: top;
-  font-size: 14px;
+/*  vertical-align: top;*/
+/*  font-size: 14px;*/
+  text-align: center;
 }
 
 .reason {
   float: left;
-  width: 33%;
+  width: 33,3333%;
 }
 
 .container-booking {
