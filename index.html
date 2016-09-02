@@ -64,28 +64,28 @@
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="reasons-block clearfix">
-          <div class="reason">
-            <h2 class="reason-name">Небольшая площадь</h2>
-            <b>– №3 –</b>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="reason">
-            <h2 class="reason-name">Красивая дорога</h2>
-            <b>– №4 –</b>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="reason">
-            <h2 class="reason-name">Мало туристов</h2>
-            <b>– №5 –</b>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+        <div class="reasons-list clearfix">
+          <div>
+            <div class="reason">
+              <h2 class="reason-name">Небольшая площадь</h2>
+              <b>– №3 –</b>
+              <p>Все достопримечательности находятся<br> очень близко</p>
+            </div>
+            <div class="reason">
+              <h2 class="reason-name">Красивая дорога</h2>
+              <b>– №4 –</b>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+            </div>
+            <div class="reason">
+              <h2 class="reason-name">Мало туристов</h2>
+              <b>– №5 –</b>
+              <p>Большинство едет в Гранд Каньон и <br>толпится там</p>
+            </div>
           </div>
         </div>
         <div class="container-booking">
-          <div class="container-booking-intro">
-            <b>Заинтересовались?</b>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </div>
+          <b>Заинтересовались?</b>
+          <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a href="#" class="btn-search selected">Поиск гостиницы в Седоне</a>
           <div class="hotel-search">
             <form class="search-form" action="#" method="post">
@@ -103,18 +103,24 @@
                 </label>
                 <button class="calendar" type="button"></button>
               </fieldset>
-              <fieldset class="adult-amount clearfix">
-                <label for="adult-amount">Взрослые:</label>
-                <button class="item-minus" type="button"></button>
-                <input class="amount-number" type="text" name="quantity" value="2" id="adult-amount">
-                <button class="item-plus" type="button"></button>
-              </fieldset>
-              <fieldset class="child-amount clearfix">
-                <label for="child-amount">Дети:</label>
-                <button class="item-minus" type="button"></button>
-                <input class="amount-number" type="text" name="quantity" value="0" id="child-amount">
-                <button class="item-plus" type="button"></button>
-              </fieldset>
+              <div class="amount-wrapper clearfix">
+                <fieldset class="adult-amount">
+                  <label for="adult-amount">Взрослые:</label>
+                  <div class="amount-counter">
+                    <button class="item-minus" type="button"></button>
+                    <input class="amount-number" type="text" name="quantity" value="2" id="adult-amount">
+                    <button class="item-plus" type="button"></button>
+                  </div>
+                </fieldset>
+                <fieldset class="child-amount">
+                  <label for="child-amount">Дети:</label>
+                  <div class="amount-counter">
+                    <button class="item-minus" type="button"></button>
+                    <input class="amount-number" type="text" name="quantity" value="0" id="child-amount">
+                    <button class="item-plus" type="button"></button>
+                  </div>
+                </fieldset>
+              </div>
               <div class="action">
                 <input type="submit" class="find" value="Найти">
               </div>

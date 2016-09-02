@@ -38,7 +38,6 @@ body {
 
 .main-header {
   min-height: 56px;
-  margin-bottom: 76px;
   background-color: red;
   outline: 3px solid #ec2fea;
 }
@@ -46,13 +45,13 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  outline: 3px solid #ee3fea;
+  /*outline: 3px solid #ee3fea;*/
 }
 
 .main-navigation {
   width: 100%;
   color: #435378;
-  outline: 3px solid black;
+/*  outline: 3px solid black;*/
 }
 
 .clearfix::after {
@@ -62,8 +61,8 @@ body {
 }
 
 .main-navigation-list {
-  padding-left: 0;
-  font-size: 0;
+  padding-left: 0px;
+  font-size: 0px;
 }
 
 .main-navigation-item {
@@ -73,7 +72,9 @@ body {
   text-align: center;
   line-height: 26px;
   background: yellow;
-  outline: 3px solid #976af3;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: center;
 }
 
 .main-navigation-item:nth-child(2) {
@@ -85,24 +86,30 @@ body {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  outline: 3px solid #00ff0c;
+  height: 70px;
 }
 
 /*как расположить фон?*/
 
 .container-welcome {
-  outline: 3px solid #00ff0c;
+/*  outline: 3px solid #00ff0c;*/
 /*высота и ширина падингами и маргинами*/
   margin: 0px auto;
+  padding-top: 76px;
   padding-bottom: 80px;
   margin-bottom: 62px;
+  text-align: center;
+}
+
+.container-welcome img {
+  outline: 3px solid #00ff0c;
 }
 
 /*как добавить белую маску?*/
 
 
 .container-intro {
-  outline: 3px solid #00ff0c;
+  /*outline: 3px solid #00ff0c;*/
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -119,7 +126,7 @@ body {
 
 .reasons-block {
   width: 100%;
-  outline: 3px solid #945f53;
+/*  outline: 3px solid #945f53;*/
   margin-bottom: 62px;
 }
 
@@ -154,38 +161,217 @@ body {
 /*как поступить с мелким отступом у третьего блока справа?*/
 
 .feature {
+  padding: 50px 55px;
   float: left;
-  width: 33,333333333%;
+  width: 33,3333333%;
 /*  display: inline-block;*/
   outline: 3px solid #990753;
-/*  vertical-align: top;*/
+  vertical-align: top;
 /*  font-size: 14px;*/
   text-align: center;
 }
 
-.reason {
+/*как их посставить чтобы не переносилось*/
+
+.reasons-list .reason {
   float: left;
-  width: 33,3333%;
+  width: 33,3%;
+  text-align: center;
+  outline: 3px solid #990753;
+  white-space: normal;
+/*  padding: 0px 55px;*/
 }
+
 
 .container-booking {
   width: 100%;
   text-align: center;
+  padding-top: 57px;
 }
 
-.container-booking-intro {
-  margin-left: auto;
-  margin-right: auto;
-  outline: 3px solid #67d353
+.container-booking b {
+  line-height: 24px;
+  font-size: 30px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  margin-top: 0px;
+}
+
+.container-booking p {
+  margin-top: 0px;
+  padding-top: 26px;
 }
 
 .btn-search {
   display: block;
+/*  padding: 30px 140px;*/
+  background-color: red;
+  width: 570px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 21px;
+  margin-top: 50px;
+}
+
+.hotel-search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 570px;
+}
+
+.check-in {
+  padding: 30px 0px;
+}
+
+.check-out {
+  padding: 0px 0px 30px;
+}
+
+.amount-wrapper {
+  width: 570px;
+  margin-bottom: 55px;
+}
+
+.adult-amount {
+  width: 50%;
+  float: left;
+}
+
+.child-amount {
+  width: 50%;
+  float: right;
+  padding: 0px;
+}
+
+.adult-amount label {
+  width: 50%;
+  float: left;
+}
+
+.child-amount label {
+  width: 50%;
+  float: left;
+}
+
+.amount-counter {
+  float: right;
+  width: 50%;
+}
+
+.amount-counter .item-minus {
+  width: 38px;
+  float: left;
+}
+
+.amount-counter .amount-number {
+  float: left;
+  width: 38px;
+  padding-right: 0px;
+}
+
+.amount-counter .item-plus {
+  width: 38px;
+  float: right;
+}
+
+/*страница hotels*/
+
+.filter-form {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding-top: 25px;
+}
+
+.filter-item {
+  width: 25%;
+  float: left;
+  height: 217px;
+}
+
+.rangeslider {
+  float: right;
+}
+
+.filter-item label {
+  display: block;
+}
+
+.sort-header {
+  width: 100%;
+  padding-top: 33px;
+  padding-bottom: 33px; /*или Найдено 3 надо падингами отодвигать? */
+}
+
+
+.sort-header h1 {
+  float: left;
+  width: 25%;
+  font-size: 21px;
+  margin: 0px;
+  text-align: center;
+}
+
+.sorting {
+  float: left;
+  width: 50%%;
+}
+
+.sort-list {
+  display: inline-block;
+  font-size: 0px;
+}
+
+.sort-list li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: 35px;
+}
+
+.sort-direction {
+  float: right;
+  width: 25%;
+  outline: 3px solid #990753;
+}
+
+.hotel {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hotel figure {
+  float: left;
+  width: 33%;
+  background-color: blue;
+}
+
+.hotel .hotel-info {
+  float: left;
+  width: 33%;
+}
+
+.hotel .hotel-rating {
+  float: right;
+  background-color: green;
 }
 
 /*спросить про карту под футером*/
 .main-footer {
+  position: relative;
+}
 
+.main-footer .container {
+  position: absolute;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 23px;
 }
 
 .footer-hashtag {
@@ -202,3 +388,5 @@ body {
   width: 33%;
   float: right;
 }
+
+
