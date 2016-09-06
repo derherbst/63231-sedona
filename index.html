@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону!</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -36,29 +36,29 @@
             <b>– №1 –</b>
             <p>Седона – не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <figure class="reason-image">
-            <img src="#" alt="Фотография Седоны">
+          <figure class="reason-image city">
+            <img src="#" alt="Фотография Седоны" width="1600" height="800">
           </figure>
         </div>
         <div class="features-block clearfix">
-          <div class="feature">
+          <div class="feature house">
             <b class="feature-name">Жилье</b>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="feature">
+          <div class="feature food">
             <b class="feature-name">Еда</b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="feature">
+          <div class="feature souvenir">
             <b class="feature-name">Сувениры</b>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="reasons-block clearfix">
-          <figure class="reason-image">
-            <img src="#" alt="Мост дъявола">
+          <figure class="reason-image bridge">
+            <!-- <img src="#" alt="Мост дъявола"> -->
           </figure>
-          <div class="reason reason-blue">
+          <div class="reason reason-blue devils-bridge">
             <h2 class="reason-name">Там есть мост дьявола</h2>
             <b>– №2 –</b>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -94,30 +94,30 @@
                   Дата заезда:
                   <input class="date" type="text" value="24 апреля 2016" name="date" >
                 </label>
-                <button class="calendar" type="button"></button>
+                <button class="icon-calendar" type="button"></button>
               </fieldset>
               <fieldset class="check-out">
                 <label>
                   Дата выезда:
                   <input class="date" type="text" value="4 июля 2016" name="date">
                 </label>
-                <button class="calendar" type="button"></button>
+                <button class="icon-calendar" type="button"></button>
               </fieldset>
               <div class="amount-wrapper clearfix">
                 <fieldset class="adult-amount">
                   <label for="adult-amount">Взрослые:</label>
                   <div class="amount-counter">
-                    <button class="item-minus" type="button"></button>
+                    <button class="item-minus" type="button"><span class="icon-minus"></span></button>
                     <input class="amount-number" type="text" name="quantity" value="2" id="adult-amount">
-                    <button class="item-plus" type="button"></button>
+                    <button class="item-plus" type="button"><span class="icon-plus"></span></button>
                   </div>
                 </fieldset>
                 <fieldset class="child-amount">
                   <label for="child-amount">Дети:</label>
                   <div class="amount-counter">
-                    <button class="item-minus" type="button"></button>
+                    <button class="item-minus" type="button"><span class="icon-minus"></span></button>
                     <input class="amount-number" type="text" name="quantity" value="0" id="child-amount">
-                    <button class="item-plus" type="button"></button>
+                    <button class="item-plus" type="button"><span class="icon-plus"></span></button>
                   </div>
                 </fieldset>
               </div>
@@ -137,9 +137,9 @@
             #visitsedona
           </section>
           <section class="footer-social">
-            <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-youtube" href="#">YouTube</a>
+            <a class="social-btn" href="#">Твиттер <span class="icon-twitter"></span></a>
+            <a class="social-btn" href="#">Фейсбук <span class="icon-facebook"></span></a>
+            <a class="social-btn" href="#">YouTube <span class="icon-youtube"></span></a>
           </section>
           <section class="footer-copyright">
             Website by
