@@ -160,7 +160,7 @@ body {
   padding-bottom: 70px;
   margin-bottom: 62px;
   text-align: center;
-  background: #475958 url(../img/background.jpg) no-repeat 50% 0;
+  background: #475958 url(../img/background.jpg) no-repeat 100% 22%;
   width: 100%;
 }
 
@@ -169,7 +169,7 @@ body {
   position: absolute;
   background-image: url(../img/white-mask.png);
   background-size: 100% 57px;
-  width: 100%; /*как сделать маску резиновой?*/
+  width: 100%;
   left: 0;
   height: 57px;
   bottom: 0px;
@@ -204,7 +204,7 @@ body {
   float: left;
   width: 33.3333333%;
   background-color: #81b3d2;
-  padding: 50px 50px 30px;
+  padding: 49px 2% 30px 2%;
   text-align: center;
   color: #fff;
   box-sizing: border-box;
@@ -226,9 +226,9 @@ body {
 }
 
 .reason p {
+  display: block;
   margin: 0px;
-  padding-top: 25px;
-  /*padding-bottom: 25px;*/
+  padding-top: 20px;
 }
 
 .reason-image {
@@ -243,14 +243,15 @@ body {
 
 .reason-image img {
   width: 100%;
-  height: 256px;
+  height: auto;
+  transform: translate(0, -75px);
 }
 
 .devils-bridge {
   float: right;
   width: 33.3333333%;
   background-color: #81b3d2;
-  padding: 44px 5% 40px 5%;
+  padding: 58px 4% 40px 4%;
   text-align: center;
   color: #fff;
   box-sizing: border-box;
@@ -268,7 +269,7 @@ body {
 
 .bridge img {
   width: 100%;
-  height: 256px;
+  height: auto;
 }
 
 .features-block {
@@ -277,7 +278,7 @@ body {
 
 .feature {
   position: relative;
-  padding: 160px calc(55/1200*100%) 75px calc(60/1200*100%);
+  padding: 160px calc(55/1200*100%) 65px calc(60/1200*100%);
   float: left;
   width: 33.3333333%;
   text-align: center;
@@ -285,6 +286,8 @@ body {
 }
 
 .feature-name {
+  display: block;
+  margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -336,7 +339,7 @@ body {
   width: 33.3333333%;
   height: auto;
   text-align: center;
-  padding: 47px calc(47/1200*100%) 35px;
+  padding: 47px 0% 60px 0%;
   box-sizing: border-box;
 }
 
@@ -434,7 +437,6 @@ body {
 .date {
   border: 0px;
   width: 346px;
-  /*height: 38px;*/
   margin-left: 15px;
   background-color: #f2f2f2;
   padding-left: 10px;
@@ -465,7 +467,6 @@ body {
   padding: 0px;
   border: 0px;
   width: 50%;
-  /*outline: 3px solid orange;*/
 }
 
 .child-amount {
@@ -474,10 +475,7 @@ body {
   margin: 0px;
   border: 0px;
   width: 50%;
-  /*outline: 3px solid orange;*/
 }
-
-/*как подпись разместить по центру вертикально?*/
 
 .adult-amount label {
   float: left;
@@ -496,7 +494,6 @@ body {
 .amount-counter {
   float: right;
   width: 114px;
-  /*outline: 3px solid yellow;*/
   width: 50%;
 }
 
@@ -588,8 +585,8 @@ body {
   width: 458px;
   margin: 0 auto;
   text-transform: uppercase;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -620,7 +617,7 @@ body {
   padding-left: calc(62/1200*100%);
   padding-right: calc(62/1200*100%);
   margin: 0px;
-  padding-top: 28px;
+  padding-top: 25px;
   box-sizing: border-box;
   background: #525b60 url(../img/background-blur.jpg) no-repeat 100% 50%;
   background-size: cover;
@@ -635,7 +632,9 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   display: block;
-  margin: 23px 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
   line-height: 21px;
   padding-left: 40px;
   position: relative;
@@ -675,6 +674,7 @@ input[type="checkbox"] + label::before {
 }
 
 .infrastructure legend {
+  margin-bottom: 23px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -682,6 +682,7 @@ input[type="checkbox"] + label::before {
 }
 
 .housing legend {
+  margin-bottom: 23px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -692,7 +693,7 @@ input[type="checkbox"] + label::before {
   width: calc(260/1200*100%);
   float: left;
   border: none;
-  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 /*фильтр цены*/
@@ -765,7 +766,6 @@ input[type="checkbox"] + label::before {
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
@@ -836,7 +836,7 @@ input[type="checkbox"] + label::before {
 .sort-header {
   width: 100%;
   padding-top: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
   padding-left: calc(72/1200*100%);
   padding-right: calc(72/1200*100%);
   border-bottom: 2px solid #e5e5e5;
@@ -866,6 +866,10 @@ input[type="checkbox"] + label::before {
   display: inline-block;
   font-size: 0px;
   padding-left: 40px;
+}
+
+.sort-list li {
+  font-weight: normal;
 }
 
 .sort-list a {
@@ -934,7 +938,7 @@ input[type="checkbox"] + label::before {
 
 .hotel {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
   padding-left: calc(72/1200*100%);
   padding-right: calc(72/1200*100%);
@@ -959,10 +963,10 @@ input[type="checkbox"] + label::before {
 }
 
 .hotel h2 {
-  margin: 0px 0px 8px;
+  margin: 0px 0px 11px;
   border: 0px;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 17px;
 }
 
 .hotel-name {
@@ -1035,12 +1039,12 @@ input[type="checkbox"] + label::before {
 
 .info-left span {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .info-right span {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .hotel .hotel-rating {
   float: right;
@@ -1074,28 +1078,31 @@ input[type="checkbox"] + label::before {
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
   text-align: center;
-  padding: 36px 0px;
+  padding: 42px 0px;
 }
 
 .footer-hashtag {
-  width: 33%;
+  width: 32%;
   float: left;
   font-size: 21px;
   line-height: 46px;
   margin: 0;
   font-weight: 700;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .social-btn {
   display: inline-block;
   vertical-align: top;
-  width: 50px;
+  width: 48px;
   height: 50px;
   font-size: 0px;
   background-color: #81b3d2;
   position: relative;
   text-align: center;
-  margin-right: 6px;
+  /*margin-right: 6px;*/
+  margin-left: 3px;
 }
 
 .social-btn span {
@@ -1119,19 +1126,33 @@ input[type="checkbox"] + label::before {
 }
 
 .footer-social {
-  width: 33%;
+  width: 34.5%;
   float: left;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .footer-copyright {
-  width: 33%;
+  width: 33.5%;
   float: right;
+  margin-top: 0px;
+  padding-top: 0;
 }
 
 .footer-copyright a {
+  display: inline-block;
   background-image: url(../img/academy-logo.png);
   height: 39px;
   width: 113px;
+  vertical-align: middle;
+}
+
+.footer-copyright a:hover {
+  background-image: url(../img/academy-logo-hvr.png);
+}
+
+.footer-copyright a:focus {
+  background-image: url(../img/academy-logo-down.png);
 }
 
 .hotels-footer .container {
