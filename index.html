@@ -90,14 +90,14 @@
               <fieldset class="check-in">
                 <label>
                   Дата заезда:
-                  <input class="date" type="text" value="24 апреля 2016" name="date" >
+                  <input class="date" type="text" value="" name="date-in" >
                 </label>
                 <button class="icon-calendar" type="button"></button>
               </fieldset>
               <fieldset class="check-out">
                 <label>
                   Дата выезда:
-                  <input class="date" type="text" value="4 июля 2016" name="date">
+                  <input class="date" type="text" value="4 июля 2016" name="date-out">
                 </label>
                 <button class="icon-calendar" type="button"></button>
               </fieldset>
@@ -106,7 +106,7 @@
                   <label for="adult-amount">Взрослые:</label>
                   <div class="amount-counter">
                     <button class="item-minus" type="button"><span class="icon-minus"></span></button>
-                    <input class="amount-number" type="text" name="quantity" value="2" id="adult-amount">
+                    <input class="amount-number" type="text" name="adult-quantity" value="2" id="adult-amount">
                     <button class="item-plus" type="button"><span class="icon-plus"></span></button>
                   </div>
                 </fieldset>
@@ -114,7 +114,7 @@
                   <label for="child-amount">Дети:</label>
                   <div class="amount-counter">
                     <button class="item-minus" type="button"><span class="icon-minus"></span></button>
-                    <input class="amount-number" type="text" name="quantity" value="0" id="child-amount">
+                    <input class="amount-number" type="text" name="child-quantity" value="0" id="child-amount">
                     <button class="item-plus" type="button"><span class="icon-plus"></span></button>
                   </div>
                 </fieldset>
@@ -146,5 +146,28 @@
         </div>
       </footer>
     </div>
+    <script>
+      var search=document.querySelector(".btn-search");
+      var popup=document.querySelector(".search-form");
+      var form=popup.querySelector("form");
+      var dateIn=popup.querySelector("[name=date-in]");
+      var dateOut=popup.querySelector("[name=date-out]");
+      var quantityAdult=popup.querySelector("#adult-amount");
+      var quantityChild=popup.querySelector("#child-amount");
+
+      search.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.toggle("search-form-show");
+        dateIn.focus();
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!dateIn.value && !dateOut.value && !parseInt(quantity.value, 10)) {
+          event.preventDefault();
+          console.log("Нужно ввести что-то");
+        }
+      });
+
+    </script>
   </body>
 </html>
