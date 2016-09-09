@@ -932,10 +932,12 @@ input[type="checkbox"] + label::before {
 .asc span {
   color: #cccccc;
   margin-left: 0px;
+  text-decoration: none;
 }
 
 .desc span {
   color: #81b3d2;
+  text-decoration: none;
 }
 
 .arrows:hover span {
@@ -948,6 +950,10 @@ input[type="checkbox"] + label::before {
 
 .arrows .selected span:hover {
   color: #81b3d2;
+}
+
+.sort-direction a {
+  text-decoration: none;
 }
 
 .hotel {
@@ -1071,7 +1077,7 @@ input[type="checkbox"] + label::before {
 
 .rating-stars span {
   font-size: 19px;
-  line-height: 21px;
+  line-height: 18px;
   color: #81b3d2;
 }
 
@@ -1096,7 +1102,7 @@ input[type="checkbox"] + label::before {
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
   text-align: center;
-  padding: 42px 0px;
+  padding: 35px 0px 42px 0px;
 }
 
 .footer-hashtag {
@@ -1127,6 +1133,11 @@ input[type="checkbox"] + label::before {
   font-size: 19px;
   color: #ffffff;
   line-height: 50px;
+  text-decoration: none;
+}
+
+.footer-social a {
+  text-decoration: none;
 }
 
 .social-btn:focus span {
@@ -1154,7 +1165,7 @@ input[type="checkbox"] + label::before {
   width: 33.5%;
   float: right;
   margin-top: 0px;
-  padding-top: 0;
+  padding-top: 5px;
 }
 
 .footer-copyright a {
